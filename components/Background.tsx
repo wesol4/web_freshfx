@@ -107,7 +107,7 @@ const Background: React.FC = () => {
             top: 0,
             left: 0,
             zIndex: -1,
-            backgroundColor: '#251634',
+            backgroundColor: '#13091C',
           }}
           aria-hidden="true"
       />
