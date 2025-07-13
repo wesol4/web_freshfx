@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Background from './components/Background';
 import Chatbot from './components/Chatbot';
+import ScrollbarGenerator from './components/ScrollbarGenerator';
 
 const App: React.FC = () => {
   return (
@@ -27,6 +28,9 @@ const App: React.FC = () => {
         </div>
         <div id="resume" className="pt-24">
           <Resume />
+        </div>
+        <div id="scrollbars" className="pt-24">
+          <ScrollbarGenerator />
         </div>
       </main>
       <Footer />
