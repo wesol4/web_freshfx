@@ -7,6 +7,7 @@ export interface Project {
   image: string;
   githubLink: string;
   demoLink?: string;
+  videoEmbedUrl?: string;
 }
 
 export interface Skill {

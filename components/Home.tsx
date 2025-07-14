@@ -1,4 +1,4 @@
-import React from 'react';
+        import React from 'react';
 import { NAME, ROLES } from '../constants';
 import Typewriter from './Typewriter';
 

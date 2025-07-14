@@ -19,11 +19,11 @@ const App: React.FC = () => {
         <div id="home" className="pt-24">
           <Home />
         </div>
-        <div id="about" className="pt-24">
-          <About />
-        </div>
         <div id="projects" className="pt-24">
           <Projects />
+        </div>
+        <div id="about" className="pt-24">
+          <About />
         </div>
         <div id="resume" className="pt-24">
           <Resume />
