@@ -1,6 +1,7 @@
 import { Project, Skill } from './types';
 
-import { SiHoudini, SiBlender, SiPython, SiNuke, SiAdobeaftereffects } from 'react-icons/si';
+import { SiHoudini, SiBlender, SiPython, SiNuke, SiAdobeaftereffects, SiUnrealengine } from 'react-icons/si';
+import { FaVideo } from 'react-icons/fa';
 export const NAME = "Freshfx";
 export const ROLES = [
   "VFX Artist",
@@ -13,6 +14,8 @@ export const ABOUT_TEXT = "I am a passionate VFX artist with experience in Houdi
 export const SKILLS: Skill[] = [
   { name: "Houdini", icon: <SiHoudini className="text-4xl" /> },
   { name: "Nuke", icon: <SiNuke className="text-4xl" /> },
+  { name: "Unreal Engine", icon: <SiUnrealengine className="text-4xl" /> },
+  { name: "SynthEyes", icon: <img src="/synteyes.png" alt="SynthEyes" className="h-10 w-10 object-contain" /> },
   { name: "After Effects", icon: <SiAdobeaftereffects className="text-4xl" /> },
   { name: "Python", icon: <SiPython className="text-4xl" /> },
   { name: "Blender", icon: <SiBlender className="text-4xl" /> },
