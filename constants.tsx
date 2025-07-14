@@ -1,7 +1,7 @@
 import { Project, Skill } from './types';
 
 import { SiHoudini, SiBlender, SiPython, SiNuke, SiAdobeaftereffects } from 'react-icons/si';
-export const NAME = "Paweł Wesołowski";
+export const NAME = "Freshfx";
 export const ROLES = [
   "VFX Artist",
   "Houdini Artist",
@@ -27,35 +27,12 @@ export const PROJECTS: Project[] = [
     demoLink: "https://vimeo.com/229182428",
     videoEmbedUrl: "https://player.vimeo.com/video/229182428"
   },
-  {
-    title: "Explosion FX — Houdini & Nuke",
-    description: "Custom pyro simulation with full control over velocity fields and dissipation. Scene rendered with Redshift, final compositing and color correction done in Nuke.",
-    image: "/project-explosion.jpg",
-    githubLink: "",
-    demoLink: ""
-  },
-  {
-    title: "CG Integration & Tracking",
-    description: "Camera tracking and 3D matchmove for integration of CG assets into live-action plate. Utilized PFTrack and Nuke for solving, projection and grading.",
-    image: "/project-tracking.jpg",
-    githubLink: "",
-    demoLink: ""
-  },
-  {
-    title: "Procedural FX Tools in Houdini",
-    description: "Developed reusable FX tools in Houdini using VEX and VOPs — including dust trails, debris scattering and impact simulations for shot reuse and flexibility.",
-    image: "/project-tools.jpg",
-    githubLink: "",
-    demoLink: ""
-  },
 ];
-
-
 
 export const SOCIAL_LINKS = {
   github: "https://github.com",
-  linkedin: "https://linkedin.com",
-  twitter: "https://twitter.com",
+  linkedin: "https://www.linkedin.com/in/pawel-wesolowski/",
+  twitter: "https://x.com/wesol4",
 };
 
 export const HERO_IMAGE = "/hero.png";

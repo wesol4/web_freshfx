@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { GoogleGenAI, Chat } from '@google/genai';
 import { NAME, ROLES, ABOUT_TEXT, SKILLS, PROJECTS } from '../constants';
@@ -21,7 +20,15 @@ const Chatbot: React.FC = () => {
 
     const initChat = async () => {
       try {
-        const ai = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
+        // For testing only - in production, use environment variables or backend proxy
+          const API_KEY = process.env.API_KEY; // Klucz pobierany z pliku .env
+
+          if (!API_KEY) {
+              console.error('API key not found. Please make sure your .env file is configured correctly.');
+          }
+
+          const ai = new GoogleGenAI({ apiKey: API_KEY! }); // Dodany klucz
+
         
         const context = `
           Name: ${NAME}
