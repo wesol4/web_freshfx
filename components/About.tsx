@@ -43,12 +43,12 @@ const About: React.FC = () => {
               <img
                   src={ABOUT_IMAGE}
                   alt="About me"
-                  className="rounded-lg filter drop-shadow-lg drop-shadow-[#c770f0]/100"
+                  className="w-[65%] rounded-lg filter drop-shadow-lg drop-shadow-[#c770f0]/100"
               />
-            </div>
           </div>
+        </div>
 
-          <div className="mt-24 text-center">
+        <div className="mt-24 text-center">
             <h2 className="text-4xl font-bold mb-12">
               Professional <strong className="text-[#c770f0]">Skillset</strong>
             </h2>

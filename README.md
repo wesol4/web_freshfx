@@ -2,8 +2,8 @@ freshFX
 Home | Projects | About | Resume
 
 Hi there! 👋
-I’m FreshFX – 
-3D Generalist • VFX Artist • Illustration • VFX Showreel
+I’m freshFX – 
+VFX Artist • Houdini Artist • Compositing • 3D Generalist
 
 Selection of my professional VFX work, including particle simulations, explosive pyro FX, compositing, 3D tracking, and FX‑driven sequences crafted in Houdini and Nuke.
 
@@ -29,5 +29,5 @@ Professional Skillset
 Resume
 Download CV
 
-Designed & Developed by FreshFX  
-© 2025 FreshFX
+Designed & Developed by freshFX  
+© 2025 freshFX

@@ -3,14 +3,15 @@ import {Project, Skill} from './types';
 import {SiAdobeaftereffects, SiBlender, SiHoudini, SiNuke, SiPython, SiUnrealengine} from 'react-icons/si';
 import SiSynthEyes from "@/assets/icons/SiSynthEyes";
 
-export const NAME = "Freshfx";
+export const NAME = "freshFx";
 export const ROLES = [
   "VFX Artist",
   "Houdini Artist",
   "Compositing",
+  "3D Generalist"
 ];
 
-export const ABOUT_TEXT = "I am a passionate VFX artist with experience in Houdini, Nuke, and complex simulations. I specialize in particle effects, explosions, compositing, and 3D tracking. I love crafting cinematic visuals and solving technical challenges to bring stories to life on screen.";
+export const ABOUT_TEXT = "With over 15 years of experience, I’m a dedicated VFX artist specializing in particle simulations, pyro and explosive effects, high‑end compositing, and 3D tracking using Houdini and Nuke. I thrive on creating cinematic visuals and overcoming technical challenges to bring stories to life on screen.";
 
 export const SKILLS: Skill[] = [
   { name: "Houdini", icon: <SiHoudini className="text-4xl" /> },

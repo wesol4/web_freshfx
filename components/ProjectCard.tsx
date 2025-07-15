@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, big }) => (
                     rel="noopener noreferrer"
                     className="mt-6 flex items-center justify-center px-6 py-3 bg-[#c770f0] text-white rounded-md font-semibold text-lg hover:bg-[#8a53ba] transition-colors duration-300"
                 >
-                    Zobacz online
+                    Launch Showreel
                 </a>
             )}
         </div>
