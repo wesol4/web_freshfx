@@ -1,7 +1,7 @@
-import {Project, Skill} from './types';
+import {Project, Skill} from './types.ts';
 
 import {SiAdobeaftereffects, SiBlender, SiHoudini, SiNuke, SiPython, SiUnrealengine} from 'react-icons/si';
-import SiSynthEyes from "@/assets/icons/SiSynthEyes";
+import SiSynthEyes from "@/assets/icons/SiSynthEyes.tsx";
 
 export const NAME = "freshFx";
 export const ROLES = [

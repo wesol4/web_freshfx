@@ -1,5 +1,5 @@
 import React from 'react';
-import {ILLUSTRATION, NAME, ROLES} from '../../constants.tsx';
+import {ILLUSTRATION, NAME, ROLES} from '../constants.tsx';
 import Typewriter from './Typewriter.tsx';
    import SiSynthEyes from '@/assets/icons/SiSynthEyes';
 

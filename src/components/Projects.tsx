@@ -1,5 +1,5 @@
 import React from 'react';
-import {PROJECTS} from '../../constants.tsx';
+import {PROJECTS} from '../constants.tsx';
 import ProjectCard from './ProjectCard.tsx';
 
 const Projects: React.FC = () => {
