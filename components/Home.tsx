@@ -1,6 +1,7 @@
-        import React from 'react';
-import { NAME, ROLES } from '../constants';
+import React from 'react';
+import {ILLUSTRATION, NAME, ROLES} from '../constants';
 import Typewriter from './Typewriter';
+   import SiSynthEyes from '@/assets/icons/SiSynthEyes';
 
 const Home: React.FC = () => {
     return (
@@ -21,7 +22,7 @@ const Home: React.FC = () => {
 
                     <div className="flex justify-center">
                         <img
-                            src="/wesol_illustration.png"
+                            src={ILLUSTRATION}
                             alt="Illustration"
                             className="max-w-full md:max-w-md lg:max-w-lg rounded-lg"
                         />
@@ -39,6 +40,8 @@ const Home: React.FC = () => {
           transform-origin: 70% 70%;
         }
       `}</style>
+           {/* // przykładowe użycie... */}
+           <SiSynthEyes size={40} />
         </section>
     );
 };

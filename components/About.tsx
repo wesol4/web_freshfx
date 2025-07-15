@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ABOUT_TEXT, SKILLS, ABOUT_IMAGE } from '../constants';
+import {ABOUT_IMAGE, ABOUT_TEXT, SKILLS} from '../constants';
 
 const About: React.FC = () => {
   return (

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { NAME, SOCIAL_LINKS } from '../constants';
+import {NAME, SOCIAL_LINKS} from '../constants';
 
 const Footer: React.FC = () => {
   return (

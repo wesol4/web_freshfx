@@ -1,7 +1,8 @@
-import { Project, Skill } from './types';
+import {Project, Skill} from './types';
 
-import { SiHoudini, SiBlender, SiPython, SiNuke, SiAdobeaftereffects, SiUnrealengine } from 'react-icons/si';
-import { FaVideo } from 'react-icons/fa';
+import {SiAdobeaftereffects, SiBlender, SiHoudini, SiNuke, SiPython, SiUnrealengine} from 'react-icons/si';
+import SiSynthEyes from "@/assets/icons/SiSynthEyes";
+
 export const NAME = "Freshfx";
 export const ROLES = [
   "VFX Artist",
@@ -15,7 +16,7 @@ export const SKILLS: Skill[] = [
   { name: "Houdini", icon: <SiHoudini className="text-4xl" /> },
   { name: "Nuke", icon: <SiNuke className="text-4xl" /> },
   { name: "Unreal Engine", icon: <SiUnrealengine className="text-4xl" /> },
-  { name: "SynthEyes", icon: <img src="/synteyes.png" alt="SynthEyes" className="h-10 w-10 object-contain" /> },
+  { name: "SynthEyes", icon: <SiSynthEyes size={40} /> },
   { name: "After Effects", icon: <SiAdobeaftereffects className="text-4xl" /> },
   { name: "Python", icon: <SiPython className="text-4xl" /> },
   { name: "Blender", icon: <SiBlender className="text-4xl" /> },
@@ -25,7 +26,7 @@ export const PROJECTS: Project[] = [
   {
     title: "VFX Showreel",
     description: "Selection of my professional VFX work — including particle simulations, explosions, compositing, tracking and FX-driven shots made in Houdini and Nuke.",
-    image: "/project-showreel.png",
+    image: "/src/assets/images/project-showreel.png",
     githubLink: "",
     demoLink: "https://vimeo.com/229182428",
     videoEmbedUrl: "https://player.vimeo.com/video/229182428"
@@ -38,4 +39,5 @@ export const SOCIAL_LINKS = {
   twitter: "https://x.com/wesol4",
 };
 
-export const ABOUT_IMAGE = "/about.png";
+export const ABOUT_IMAGE = "/src/assets/images/about.png";
+export const ILLUSTRATION = "/src/assets/images/illustraction.png";
