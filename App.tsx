@@ -13,21 +13,17 @@ const App: React.FC = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Po 1.5 sekundy wyłączamy loader
         const timer = setTimeout(() => setLoading(false), 1500);
         return () => clearTimeout(timer);
     }, []);
 
-    // Jeśli wciąż się ładuje, pokazujemy Loader
+    // Loader pełnoekranowy, bez żadnych innych elementów
     if (loading) {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-white">
-                <Loader />
-            </div>
+            <Loader />
         );
     }
 
-    // Po zakończeniu ładowania renderujemy całą resztę
     return (
         <div className="min-h-screen">
             <Background />

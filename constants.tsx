@@ -41,3 +41,5 @@ export const SOCIAL_LINKS = {
 
 export const ABOUT_IMAGE = "/src/assets/images/about.png";
 export const ILLUSTRATION = "/src/assets/images/illustraction.png";
+export const PHONE = "+48 535 185 100";
+export const EMAIL = "wesol4@gmail.com";

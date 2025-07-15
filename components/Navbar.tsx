@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { FaHome, FaProjectDiagram, FaUser, FaFileAlt } from 'react-icons/fa';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +15,10 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#about', label: 'About' },
-    { href: '#resume', label: 'Resume' },
+    { href: '#home', label: 'Home', icon: <FaHome /> },
+    { href: '#projects', label: 'Projects', icon: <FaProjectDiagram /> },
+    { href: '#about', label: 'About', icon: <FaUser /> },
+    { href: '#resume', label: 'Resume', icon: <FaFileAlt /> },
   ];
 
   return (
@@ -39,8 +40,9 @@ const Navbar: React.FC = () => {
                     <a
                         key={link.href}
                         href={link.href}
-                        className="text-gray-300 hover:text-[#c770f0] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                        className="text-gray-300 hover:text-[#c770f0] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center gap-2"
                     >
+                      <span className="text-[#c770f0]">{link.icon}</span>
                       {link.label}
                     </a>
                 ))}
@@ -101,8 +103,9 @@ const Navbar: React.FC = () => {
                         key={link.href}
                         href={link.href}
                         onClick={() => setIsOpen(false)}
-                        className="text-gray-300 hover:text-[#c770f0] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
+                        className="text-gray-300 hover:text-[#c770f0] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 flex items-center gap-2"
                     >
+                      <span className="text-[#c770f0]">{link.icon}</span>
                       {link.label}
                     </a>
                 ))}
