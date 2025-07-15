@@ -38,5 +38,4 @@ export const SOCIAL_LINKS = {
   twitter: "https://x.com/wesol4",
 };
 
-export const HERO_IMAGE = "/hero.png";
 export const ABOUT_IMAGE = "/about.png";

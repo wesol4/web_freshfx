@@ -29,7 +29,6 @@ const App: React.FC = () => {
       </main>
       <Footer />
       <ScrollToTop />
-      {/* <Chatbot /> */} {/* Usuń wywołanie komponentu */}
     </div>
   );
 };
