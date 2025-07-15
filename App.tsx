@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -8,7 +7,6 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Background from './components/Background';
-import Chatbot from './components/Chatbot';
 
 const App: React.FC = () => {
   return (
@@ -31,7 +29,7 @@ const App: React.FC = () => {
       </main>
       <Footer />
       <ScrollToTop />
-      <Chatbot />
+      {/* <Chatbot /> */} {/* Usuń wywołanie komponentu */}
     </div>
   );
 };
