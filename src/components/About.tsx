@@ -1,6 +1,8 @@
 import React from 'react';
-import { ABOUT_IMAGE, ABOUT_TEXT, SKILLS, EMAIL, PHONE} from '../constants';
+import { ABOUT_IMAGE, ABOUT_TEXT, SKILLS, EMAIL, PHONE} from '../../constants.tsx';
 import { FaEnvelope, FaPhone } from 'react-icons/fa'; // ← Dodany import
+import { SiArtstation, SiLinkedin } from 'react-icons/si';
+import { FaFilePdf } from 'react-icons/fa';
 
 const About: React.FC = () => {
   return (

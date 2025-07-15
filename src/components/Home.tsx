@@ -1,6 +1,6 @@
 import React from 'react';
-import {ILLUSTRATION, NAME, ROLES} from '../constants';
-import Typewriter from './Typewriter';
+import {ILLUSTRATION, NAME, ROLES} from '../../constants.tsx';
+import Typewriter from './Typewriter.tsx';
    import SiSynthEyes from '@/assets/icons/SiSynthEyes';
 
 const Home: React.FC = () => {

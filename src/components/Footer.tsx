@@ -1,5 +1,5 @@
 import React from 'react';
-import {NAME, SOCIAL_LINKS} from '../constants';
+import {NAME, SOCIAL_LINKS} from '../../constants.tsx';
 
 const Footer: React.FC = () => {
   return (

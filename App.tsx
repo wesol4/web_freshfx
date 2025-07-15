@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Loader from "./components/Loader";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Resume from "./components/Resume";
-import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
-import Background from "./components/Background";
+import Loader from "./src/components/Loader";
+import Navbar from "./src/components/Navbar";
+import Home from "./src/components/Home";
+import About from "./src/components/About";
+import Projects from "./src/components/Projects";
+import Resume from "./src/components/Resume";
+import Footer from "./src/components/Footer";
+import ScrollToTop from "./src/components/ScrollToTop";
+import Background from "./src/components/Background";
 
 const App: React.FC = () => {
     const [loading, setLoading] = useState(true);
