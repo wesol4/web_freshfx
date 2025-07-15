@@ -43,7 +43,7 @@ const About: React.FC = () => {
               <img
                   src={ABOUT_IMAGE}
                   alt="About me"
-                  className="rounded-lg shadow-2xl shadow-[#c770f0]/20"
+                  className="rounded-lg filter drop-shadow-lg drop-shadow-[#c770f0]/100"
               />
             </div>
           </div>
