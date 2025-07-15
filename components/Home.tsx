@@ -40,8 +40,6 @@ const Home: React.FC = () => {
           transform-origin: 70% 70%;
         }
       `}</style>
-           {/* // przykładowe użycie... */}
-           <SiSynthEyes size={40} />
         </section>
     );
 };

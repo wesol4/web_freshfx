@@ -9,7 +9,6 @@ const SiSynthEyes = ({ size = 32, color = "#fff", ...props }) => (
     fill="none"
     {...props}
   >
-    {/* Logo SynthEyes (przerysowane w stylu 'react-icons') */}
     <polygon
       points="16,4 28,12 28,24 16,32 4,24 4,12"
       fill="#fff"
