@@ -5,8 +5,11 @@
 -   import SiSynthEyes from '@/assets/icons/SiSynthEyes';
  
 -const Home: React.FC = () => {
+}
 +const HomeHero: React.FC = () => {
      return (
+     )
+}
 @@ .. @@
 -export default Home;
 +export default HomeHero;

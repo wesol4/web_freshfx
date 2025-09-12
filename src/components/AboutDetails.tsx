@@ -8,8 +8,11 @@
 +import { formatPhone } from '../utils/formatPhone';
  
 -const About: React.FC = () => {
+}
 +const AboutDetails: React.FC = () => {
    return (
+   )
+}
 @@ .. @@
                      <a
 -                        href={`tel:${PHONE.replace(/\s+/g, '')}`}
