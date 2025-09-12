@@ -1,0 +1,25 @@
+import React from 'react';
+import { SKILLS } from '../data/skills';
+
+const SkillsGrid: React.FC = () => {
+  return (
+    <div className="mt-24 text-center">
+      <h2 className="text-4xl font-bold mb-12">
+        Professional <strong className="text-[#c770f0]">Skillset</strong>
+      </h2>
+      <div className="flex flex-wrap justify-center gap-6">
+        {SKILLS.map((skill, index) => (
+          <div
+            key={index}
+            className="w-36 h-36 flex flex-col items-center justify-center bg-gray-800/50 rounded-lg border border-gray-700 hover:border-[#c770f0] hover:scale-105 hover:shadow-lg hover:shadow-[#c770f0]/20 transition-all duration-300 cursor-pointer"
+          >
+            <div className="text-[#c770f0] mb-2">{skill.icon}</div>
+            <p className="text-sm font-medium">{skill.name}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default SkillsGrid;

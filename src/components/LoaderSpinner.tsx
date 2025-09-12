@@ -1,6 +1,6 @@
 import React from "react";
 
-const Loader: React.FC = () => (
+const LoaderSpinner: React.FC = () => (
   <div
     className="fixed inset-0 flex items-center justify-center z-50"
     style={{
@@ -13,4 +13,4 @@ const Loader: React.FC = () => (
   </div>
 );
 
-export default Loader;
+export default LoaderSpinner;

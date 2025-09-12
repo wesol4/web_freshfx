@@ -1,8 +1,8 @@
 import React from 'react';
-import {PROJECTS} from '../constants.tsx';
+import {PROJECTS} from '../data/projects';
 import ProjectCard from './ProjectCard.tsx';
 
-const Projects: React.FC = () => {
+const DemoReelPlayer: React.FC = () => {
   const demo = PROJECTS[0];
   return (
       <section className="py-20">
@@ -20,4 +20,4 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects;
+export default DemoReelPlayer;

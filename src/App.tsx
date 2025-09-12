@@ -1,50 +1,39 @@
 import React, { useEffect, useState } from "react";
-import Loader from "./components/Loader.tsx";
-import Navbar from "./components/Navbar.tsx";
-import Home from "./components/Home.tsx";
-import About from "./components/About.tsx";
-import Projects from "./components/Projects.tsx";
+import LoaderSpinner from "./components/LoaderSpinner";
+import Layout from "./components/Layout";
+import HomeHero from "./components/HomeHero";
+import AboutDetails from "./components/AboutDetails";
+import DemoReelPlayer from "./components/DemoReelPlayer";
+import SkillsGrid from "./components/SkillsGrid";
 import Resume from "./components/Resume.tsx";
-import Footer from "./components/Footer.tsx";
-import ScrollToTop from "./components/ScrollToTop.tsx";
-import Background from "./components/Background.tsx";
+import { useIsLoaded } from "./hooks/useIsLoaded";
 
 const App: React.FC = () => {
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 1500);
-        return () => clearTimeout(timer);
-    }, []);
+    const isLoaded = useIsLoaded(1500);
 
     // Loader pełnoekranowy, bez żadnych innych elementów
-    if (loading) {
+    if (!isLoaded) {
         return (
-            <Loader />
+            <LoaderSpinner />
         );
     }
 
     return (
-        <div className="min-h-screen">
-            <Background />
-            <Navbar />
-            <main className="relative z-10">
-                <section id="home" className="pt-24">
-                    <Home />
-                </section>
-                <section id="projects" className="pt-24">
-                    <Projects />
-                </section>
-                <section id="about" className="pt-24">
-                    <About />
-                </section>
-                <section id="resume" className="pt-24">
-                    <Resume />
-                </section>
-            </main>
-            <Footer />
-            <ScrollToTop />
-        </div>
+        <Layout>
+            <section id="home" className="pt-24">
+                <HomeHero />
+            </section>
+            <section id="projects" className="pt-24">
+                <DemoReelPlayer />
+            </section>
+            <section id="about" className="pt-24">
+                <AboutDetails />
+                <SkillsGrid />
+            </section>
+            <section id="resume" className="pt-24">
+                <Resume />
+            </section>
+        </Layout>
     );
 };
 
