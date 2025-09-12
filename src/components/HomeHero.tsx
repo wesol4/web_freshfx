@@ -12,7 +12,7 @@ const HomeHero: React.FC = () => {
                             Hi, I'm <span className="text-blue-400">{NAME}</span>
                         </h1>
                         <div className="text-2xl md:text-3xl text-gray-300 mb-8">
-                            <Typewriter texts={ROLES} />
+                            <Typewriter strings={ROLES} />
                         </div>
                         <p className="text-lg text-gray-400 mb-8 leading-relaxed">
                             Creating stunning visual effects and bringing imagination to life through cutting-edge technology.
