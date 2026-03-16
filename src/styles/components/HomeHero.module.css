@@ -1,0 +1,38 @@
+.hero {
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  align-items: center;
+}
+
+.waveAnimation {
+  animation: wave 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave {
+  0%, 100% { 
+    transform: rotate(0deg); 
+  }
+  20%, 60% { 
+    transform: rotate(-25deg); 
+  }
+  40%, 80% { 
+    transform: rotate(10deg); 
+  }
+}
+
+.typewriter {
+  border-right: 4px solid #c770f0;
+  padding-right: 0.25rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { 
+    border-color: #c770f0; 
+  }
+  51%, 100% { 
+    border-color: transparent; 
+  }
+}
