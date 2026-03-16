@@ -1,4 +1,3 @@
-// Plik: SiSynthEyes.js (albo .tsx)
 import React from "react";
 
 const SiSynthEyes = ({ size = 32, color = "#fff", ...props }) => (
