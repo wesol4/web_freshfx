@@ -58,7 +58,7 @@ const SkillsAccordion: React.FC = () => {
           }`}
         >
           {expandedSkill && activeSkill && (
-            <div className="bg-gray-800/50 rounded-lg border border-[#c770f0]/40 p-6 md:p-8 shadow-lg shadow-[#c770f0]/10">
+            <div className="bg-white/5 rounded-lg p-6 md:p-8 shadow-xl shadow-black/30">
               <div className="flex items-start justify-between mb-6">
                 <div className="flex items-center">
                   <div className="text-[#c770f0] mr-4 text-5xl flex-shrink-0">{activeIcon}</div>
@@ -69,7 +69,7 @@ const SkillsAccordion: React.FC = () => {
                 </div>
                 <button
                   onClick={() => setExpandedSkill(null)}
-                  className="ml-4 flex-shrink-0 p-2 rounded-full hover:bg-gray-700 transition-colors duration-200 text-gray-400 hover:text-white"
+                  className="ml-4 flex-shrink-0 p-2 rounded-full hover:bg-white/10 transition-colors duration-200 text-gray-400 hover:text-white"
                   aria-label="Close"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -78,7 +78,7 @@ const SkillsAccordion: React.FC = () => {
                 </button>
               </div>
 
-              <div className="bg-gradient-to-r from-[#c770f0]/10 to-purple-800/10 rounded-lg p-5 md:p-6 border border-[#c770f0]/20">
+              <div className="rounded-lg p-5 md:p-6 bg-white/5">
                 <p className="text-gray-300 leading-relaxed text-base md:text-lg">{activeSkill.description}</p>
                 {activeSkill.badge && (
                   <div className={`mt-4 p-3 ${activeSkill.badge.color} rounded-lg border ${activeSkill.badge.borderColor}`}>
