@@ -8,6 +8,7 @@ import DemoReelPlayer from "./components/DemoReelPlayer";
 import SkillsAccordion from "./components/SkillsAccordion";
 import Resume from "./components/Resume";
 import { useIsLoaded } from "./hooks/useIsLoaded";
+import { LOADER_DELAY_MS } from "./data/constants";
 
 import HoudiniPage from "./pages/houdini";
 import NukePage from "./pages/nuke";
@@ -17,7 +18,7 @@ import PythonPage from "./pages/python";
 import BlenderPage from "./pages/blender";
 
 const HomePage: React.FC = () => {
-    const isLoaded = useIsLoaded(1500);
+    const isLoaded = useIsLoaded(LOADER_DELAY_MS);
 
     if (!isLoaded) {
         return <LoaderSpinner />;

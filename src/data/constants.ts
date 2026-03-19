@@ -12,3 +12,4 @@ export const ABOUT_IMAGE = "/images/about-photo.png";
 export const ILLUSTRATION = "/images/home-illustration.png";
 export const PHONE = "+48 535 185 100";
 export const EMAIL = "wesol4@gmail.com";
+export const LOADER_DELAY_MS = 1500;

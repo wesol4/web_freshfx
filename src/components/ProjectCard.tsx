@@ -25,7 +25,7 @@ const VideoFacade: React.FC<{ project: Project; big?: boolean }> = ({ project, b
                     src={`${project.videoEmbedUrl}?autoplay=1`}
                     className="w-full h-full absolute top-0 left-0 rounded-t-lg"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
+                    allowFullscreen
                     title={project.title}
                 />
             </div>

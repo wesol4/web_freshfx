@@ -12,11 +12,9 @@ export default defineConfig({
     server: {
         host: '0.0.0.0',
         port: 5175,
-        allowedHosts: [
-            'freshfx.pl',
-            'www.freshfx.pl',
-            '.freshfx.pl',
-        ],
+        allowedHosts: process.env.ALLOWED_HOSTS
+            ? process.env.ALLOWED_HOSTS.split(',')
+            : ['freshfx.pl', 'www.freshfx.pl', '.freshfx.pl'],
     },
     build: {
         outDir: 'dist',
